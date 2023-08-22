@@ -1,6 +1,6 @@
 import Hero from '@/components/Hero';
 import FeaturedPosts from '@/components/FeaturedPosts';
-import Image from 'next/image';
+import CarouselPosts from '@/components/CarouselPosts';
 
 export default function HomePage() {
   return (
@@ -8,6 +8,8 @@ export default function HomePage() {
       <Hero />
       {/* @ts-expect-error Server Component */}
       <FeaturedPosts />
+      {/* @ts-expect-error Server Component */}
+      <CarouselPosts />
     </>
   );
 }
